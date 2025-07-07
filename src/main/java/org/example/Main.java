@@ -54,6 +54,11 @@ public class Main {
                     break;
 
                 case 5:
+                    System.out.print("Enter product name to remove: ");
+                    String productNameToRemove = s.next();
+
+                    System.out.println(inventory.removeProduct(productNameToRemove));
+                    break;
                 case 6:
                     stopProgram = true;
                     System.out.println("\nThank you. Please come again!");

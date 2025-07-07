@@ -58,9 +58,15 @@ public class Inventory {
 
     }
 
-//    public String removeProduct(){
-//
-//    }
+    public String removeProduct(String productNameToRemove){
+        boolean hasProductName = map.containsKey(productNameToRemove);
+        if (hasProductName){
+            map.remove(productNameToRemove);
+            return "Product removed.";
+        }else{
+            return "Product does not exist";
+        }
+    }
 
     public void viewInventory(){
         if (map.isEmpty()){

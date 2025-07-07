@@ -14,4 +14,6 @@ Screenshot <br>
 <b> View Inventory </b> <br>
 ![viewInventory.png](viewInventory.png)
 
+<b> Remove Product </b> <br>
+![removeProduct.png](removeProduct.png)
 
