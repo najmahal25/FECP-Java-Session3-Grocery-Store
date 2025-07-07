@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.*;
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public class Inventory {
     HashMap<String, Integer> map;
@@ -67,7 +66,7 @@ public class Inventory {
         if (map.isEmpty()){
             System.out.println("Inventory is empty.");
         }else{
-            String CurrentInventory = "Current Inventory:\n";
+           System.out.println("Current Inventory:\n");
             BiConsumer<String, Integer> printCurrentInventory = (productName, productQuantity) -> System.out.println(productName + " - " + productQuantity + " pcs");
             map.forEach(printCurrentInventory);
         }
