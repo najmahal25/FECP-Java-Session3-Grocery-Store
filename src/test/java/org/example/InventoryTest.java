@@ -4,13 +4,11 @@ package org.example;
 import org.junit.jupiter.api.*;
 
 import java.util.HashMap;
-import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 class InventoryTest {
-    Scanner s = new Scanner(System.in);
     HashMap<String, Integer> products = new HashMap<>();
     Inventory inventory = new Inventory(products);
 
