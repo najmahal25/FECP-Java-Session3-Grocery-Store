@@ -12,7 +12,7 @@ public class Inventory {
 
     public String addProduct(String productName,  int productQuantity){
         boolean hasProductName = map.containsKey(productName);
-        if (hasProductName){
+        if (hasProductName && productQuantity == map.get(productName)){
             return "Product already exists!";
         }else {
             if (productQuantity >= 0) {
